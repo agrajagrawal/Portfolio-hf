@@ -20,21 +20,14 @@
     <link href="css/style.css" rel="stylesheet">
 
     <!-- CSS Skin File -->
-    <link href="css/skins/yellow.css" rel="stylesheet">
+    <link href="css/skin.css" rel="stylesheet">
 
-    <link rel="shortcut icon" href="images/favicon.png">
+    <!-- <link rel="shortcut icon" href="images/favicon.png"> -->
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="img/Favicons/img1.png" type="image/x-icon">
 
     <!-- Live Style Switcher - demo only -->
-    <link rel="alternate stylesheet" type="text/css" title="blue" href="css/skins/blue.css" />
-    <link rel="alternate stylesheet" type="text/css" title="green" href="css/skins/green.css" />
-    <link rel="alternate stylesheet" type="text/css" title="yellow" href="css/skins/yellow.css" />
-    <link rel="alternate stylesheet" type="text/css" title="blueviolet" href="css/skins/blueviolet.css" />
-    <link rel="alternate stylesheet" type="text/css" title="goldenrod" href="css/skins/goldenrod.css" />
-    <link rel="alternate stylesheet" type="text/css" title="magenta" href="css/skins/magenta.css" />
-    <link rel="alternate stylesheet" type="text/css" title="orange" href="css/skins/orange.css" />
-    <link rel="alternate stylesheet" type="text/css" title="purple" href="css/skins/purple.css" />
-    <link rel="alternate stylesheet" type="text/css" title="red" href="css/skins/red.css" />
-    <link rel="alternate stylesheet" type="text/css" title="yellowgreen" href="css/skins/yellowgreen.css" />
+    
     <link rel="stylesheet" type="text/css" href="css/styleswitcher.css" />
 
     <!-- Modernizr JS File -->
@@ -48,34 +41,34 @@
         <h4>STYLE SWITCHER</h4>
         <ul>
             <li>
-                <a href="#" onclick="setActiveStyleSheet('purple');" title="purple" class="color"><img src="img/styleswitcher/purple.png" alt="purple"/></a>
+                <a href="#" onclick="changeskin('purple');" title="purple" class="color"><img src="img/styleswitcher/purple.png" alt="purple"/></a>
             </li>
             <li>
-                <a href="#" onclick="setActiveStyleSheet('red');" title="red" class="color"><img src="img/styleswitcher/red.png" alt="red"/></a>
+                <a href="#" onclick="changeskin('red');" title="red" class="color"><img src="img/styleswitcher/red.png" alt="red"/></a>
             </li>
             <li>
-                <a href="#" onclick="setActiveStyleSheet('blueviolet');" title="blueviolet" class="color"><img src="img/styleswitcher/blueviolet.png" alt="blueviolet"/></a>
+                <a href="#" onclick="changeskin('blueviolet');" title="blueviolet" class="color"><img src="img/styleswitcher/blueviolet.png" alt="blueviolet"/></a>
             </li>
             <li>
-                <a href="#" onclick="setActiveStyleSheet('blue');" title="blue" class="color"><img src="img/styleswitcher/blue.png" alt="blue"/></a>
+                <a href="#" onclick="changeskin('blue');" title="blue" class="color"><img src="img/styleswitcher/blue.png" alt="blue"/></a>
             </li>
             <li>
-                <a href="#" onclick="setActiveStyleSheet('goldenrod');" title="goldenrod" class="color"><img src="img/styleswitcher/goldenrod.png" alt="goldenrod"/></a>
+                <a href="#" onclick="changeskin('goldenrod');" title="goldenrod" class="color"><img src="img/styleswitcher/goldenrod.png" alt="goldenrod"/></a>
             </li>
             <li>
-                <a href="#" onclick="setActiveStyleSheet('magenta');" title="magenta" class="color"><img src="img/styleswitcher/magenta.png" alt="magenta"/></a>
+                <a href="#" onclick="changeskin('magenta');" title="magenta" class="color"><img src="img/styleswitcher/magenta.png" alt="magenta"/></a>
             </li>
             <li>
-                <a href="#" onclick="setActiveStyleSheet('yellowgreen');" title="yellowgreen" class="color"><img src="img/styleswitcher/yellowgreen.png" alt="yellowgreen"/></a>
+                <a href="#" onclick="changeskin('yellowgreen');" title="yellowgreen" class="color"><img src="img/styleswitcher/yellowgreen.png" alt="yellowgreen"/></a>
             </li>
             <li>
-                <a href="#" onclick="setActiveStyleSheet('orange');" title="orange" class="color"><img src="img/styleswitcher/orange.png" alt="orange"/></a>
+                <a href="#" onclick="changeskin('orange');" title="orange" class="color"><img src="img/styleswitcher/orange.png" alt="orange"/></a>
             </li>
             <li>
-                <a href="#" onclick="setActiveStyleSheet('green');" title="green" class="color"><img src="img/styleswitcher/green.png" alt="green"/></a>
+                <a href="#" onclick="changeskin('green');" title="green" class="color"><img src="img/styleswitcher/green.png" alt="green"/></a>
             </li>
             <li>
-                <a href="#" onclick="setActiveStyleSheet('yellow');" title="yellow" class="color"><img src="img/styleswitcher/yellow.png" alt="yellow"/></a>
+                <a href="#" onclick="changeskin('yellow');" title="yellow" class="color"><img src="img/styleswitcher/yellow.png" alt="yellow"/></a>
             </li>
         </ul>
 
@@ -102,8 +95,8 @@
         </li>
         <li class="icon-box">
             <i class="fa fa-briefcase"></i>
-            <a href="portfolio.html">
-                <h2>Portfolio</h2>
+            <a href="projects.html">
+                <h2>Projects</h2>
             </a>
         </li>
         <li class="icon-box">
@@ -114,7 +107,7 @@
         </li>
         <li class="icon-box active">
             <i class="fa fa-comments"></i>
-            <a href="blog.html">
+            <a href="#">
                 <h2>Blog</h2>
             </a>
         </li>
@@ -130,9 +123,9 @@
             <ul class="list-unstyled" id="menu">
                 <li><a href="index.html"><i class="fa fa-home"></i><span>Home</span></a></li>
                 <li><a href="about.html"><i class="fa fa-user"></i><span>About</span></a></li>
-                <li><a href="portfolio.html"><i class="fa fa-folder-open"></i><span>Portfolio</span></a></li>
+                <li><a href="projects.html"><i class="fa fa-folder-open"></i><span>Projects</span></a></li>
                 <li><a href="contact.html"><i class="fa fa-envelope-open"></i><span>Contact</span></a></li>
-                <li class="active"><a href="blog.html"><i class="fa fa-comments"></i><span>Blog</span></a></li>
+                <li class="active"><a href="#"><i class="fa fa-comments"></i><span>Blog</span></a></li>
             </ul>
         </div>
     </nav>
@@ -154,13 +147,13 @@
             <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-30">
                 <article class="post-container">
                     <div class="post-thumb">
-                        <a href="blog-post.html" class="d-block position-relative overflow-hidden">
+                        <a href="blog-post-1.html" class="d-block position-relative overflow-hidden">
                             <img src="img/blog/blog-post-1.jpg" class="img-fluid" alt="Blog Post">
                         </a>
                     </div>
                     <div class="post-content">
                         <div class="entry-header">
-                            <h3><a href="blog-post.html">How to Own Your Audience by Creating an Email List</a></h3>
+                            <h3><a href="blog-post-1.html">How to Own Your Audience by Creating an Email List</a></h3>
                         </div>
                         <div class="entry-content open-sans-font">
                             <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...
@@ -174,13 +167,13 @@
             <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-30">
                 <article class="post-container">
                     <div class="post-thumb">
-                        <a href="blog-post.html" class="d-block position-relative overflow-hidden">
+                        <a href="blog-post-2.html" class="d-block position-relative overflow-hidden">
                             <img src="img/blog/blog-post-2.jpg" class="img-fluid" alt="">
                         </a>
                     </div>
                     <div class="post-content">
                         <div class="entry-header">
-                            <h3><a href="blog-post.html">Top 10 Toolkits for Deep Learning in 2020</a></h3>
+                            <h3><a href="blog-post-2.html">Top 10 Toolkits for Deep Learning in 2020</a></h3>
                         </div>
                         <div class="entry-content open-sans-font">
                             <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...
@@ -194,13 +187,13 @@
             <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-30">
                 <article class="post-container">
                     <div class="post-thumb">
-                        <a href="blog-post.html" class="d-block position-relative overflow-hidden">
+                        <a href="blog-post-3.html" class="d-block position-relative overflow-hidden">
                             <img src="img/blog/blog-post-3.jpg" class="img-fluid" alt="">
                         </a>
                     </div>
                     <div class="post-content">
                         <div class="entry-header">
-                            <h3><a href="blog-post.html">Everything You Need to Know About Web Accessibility</a></h3>
+                            <h3><a href="blog-post-3.html">Everything You Need to Know About Web Accessibility</a></h3>
                         </div>
                         <div class="entry-content open-sans-font">
                             <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...
@@ -214,13 +207,13 @@
             <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-30">
                 <article class="post-container">
                     <div class="post-thumb">
-                        <a href="blog-post.html" class="d-block position-relative overflow-hidden">
+                        <a href="blog-post-4.html" class="d-block position-relative overflow-hidden">
                             <img src="img/blog/blog-post-4.jpg" class="img-fluid" alt="">
                         </a>
                     </div>
                     <div class="post-content">
                         <div class="entry-header">
-                            <h3><a href="blog-post.html">How to Inject Humor & Comedy Into Your Brand</a></h3>
+                            <h3><a href="blog-post-4.html">How to Inject Humor & Comedy Into Your Brand</a></h3>
                         </div>
                         <div class="entry-content open-sans-font">
                             <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...
@@ -234,13 +227,13 @@
             <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-30">
                 <article class="post-container">
                     <div class="post-thumb">
-                        <a href="blog-post.html" class="d-block position-relative overflow-hidden">
+                        <a href="blog-post-5.html" class="d-block position-relative overflow-hidden">
                             <img src="img/blog/blog-post-3.jpg" class="img-fluid" alt="">
                         </a>
                     </div>
                     <div class="post-content">
                         <div class="entry-header">
-                            <h3><a href="blog-post.html">Everyone in Web Design: How To Achieve Success</a></h3>
+                            <h3><a href="blog-post-5.html">Everyone in Web Design: How To Achieve Success</a></h3>
                         </div>
                         <div class="entry-content open-sans-font">
                             <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...
@@ -254,13 +247,13 @@
             <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-30">
                 <article class="post-container">
                     <div class="post-thumb">
-                        <a href="blog-post.html" class="d-block position-relative overflow-hidden">
+                        <a href="blog-post-6.html" class="d-block position-relative overflow-hidden">
                             <img src="img/blog/blog-post-6.jpg" class="img-fluid" alt="">
                         </a>
                     </div>
                     <div class="post-content">
                         <div class="entry-header">
-                            <h3><a href="blog-post.html">Class 10 students dilemma: An overview</a></h3>
+                            <h3><a href="blog-post-6.html">Class 10 students dilemma: An overview</a></h3>
                         </div>
                         <div class="entry-content open-sans-font">
                             <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...
@@ -274,8 +267,8 @@
             <div class="col-12 mt-4">
                 <nav aria-label="Page navigation example">
                     <ul class="pagination justify-content-center mb-0">
-                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
                         <li class="page-item"><a class="page-link" href="#">3</a></li>
                         <li class="page-item"><a class="page-link" href="#">4</a></li>
                     </ul>
@@ -303,6 +296,4 @@
 <script src="js/custom.js"></script>
 
 </body>
-
-
 </html>
